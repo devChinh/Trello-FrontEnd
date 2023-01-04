@@ -1,0 +1,109 @@
+@import '../../_global.scss';
+
+.board-content{
+    height: $board-content-height; // 91vh
+    display: flex;
+    margin : 0 $gap $gap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .dragging{
+      transform: rotate(-5deg);
+      position : absolute;
+    }
+    
+    .clone {
+      background : #eee;
+      border : 2px solid black;
+    }
+    
+    
+    &::-webkit-scrollbar-track {
+      background: #faf7f7; 
+    }
+     
+    &::-webkit-scrollbar-thumb {
+      background: #80a5ba; 
+      border-radius: 5px;
+    }
+
+    .add-new-column{
+      background: hsla(0 , 0% , 100% , .24);
+      line-height: 32px;
+      padding : 4px 0 4px 15px ; 
+      color:white;
+      cursor: pointer;
+      margin-left: $gap;
+      max-width: 250px;
+      font-size: 15px;
+      border-radius: $column-border-radius;
+
+      &:hover{
+        background: hsla(0 , 0% , 100% , .44);
+      }
+    }
+
+    .columns-drop-preview{
+      background-color: rgba(150 , 150 , 200 , 0.1);
+      border : 1px dashed #abcdef;
+      // margin : 5px 45px 5px 5px ;
+    }
+
+    .row {
+      width: 250px;
+      min-width: 250px;
+    }
+    
+    .enter-new-column{
+      color:white;
+      width: 250px;
+      padding : 4px 10px ; 
+      max-width: 250px;
+      margin-left: $gap;
+      border-radius: $column-border-radius;
+      line-height: 32px;
+      background: rgb(191, 191, 191);
+
+      .input-enter-new-column{
+        margin: 10px 0;
+      }
+      .cancel-new-column{
+        margin-left: 15px;
+        i{
+          font-size: 20px;
+          color: rgb(204, 132, 132);
+          &:hover {
+            color : red ;
+          }
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none ;
+  border-color: none !important;
+}
+
+.btn:focus , .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}}
+

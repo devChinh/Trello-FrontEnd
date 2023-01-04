@@ -1,0 +1,42 @@
+@import '../../_global.scss';
+
+   .card-item{
+    background-color: white;
+    padding : $gap;
+    border-radius:$card-border-radius;
+    box-shadow: 0 1px 1px rgba(0 , 0, 0 , 0.1);
+    cursor: pointer;
+    margin-bottom: $gap;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    span{
+      color: black
+    }
+    
+    img.card-cover{
+    display : block;
+    width: calc(100% + 2 * #{$gap});
+    margin : -10px 0 10px -10px;
+    border-top-left-radius : $column-border-radius;
+    border-top-right-radius : $column-border-radius;
+   }
+
+   .delete{
+      color : rgb(235, 110, 110);
+      position : absolute;
+      right : 10px;
+      bottom : 5px;
+
+   }
+   .edit{
+      color : rgb(235, 110, 110);
+      position : absolute;
+      right : 35px;
+      bottom : 5px;
+   }
+}
+

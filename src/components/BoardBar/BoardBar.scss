@@ -1,0 +1,117 @@
+@import '../../_global.scss';
+
+.navbar-board{
+   height: $navbar-board-height;
+    padding-left: $gap;
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+      background-color: $board-bg-color;
+      font-size: 1.1rem;
+
+      .navbar-board-left{
+        display: flex;
+        align-items: center;
+
+        .boards{
+          display: flex;
+          background: hsla(0deg, 0%, 100%, 0.24);
+          align-items: center;
+          height: 30px;
+          border-radius: 5px;
+
+          p{
+            margin : auto 10px;
+            color : white;
+            font-weight: 700;
+          }
+          .icons{
+            color : white;
+            font-size: 20px;
+          }
+        }
+
+        h2{
+          color : white;
+          font-weight: 600;
+          margin-left: 15px;
+          position: relative;
+
+          &::after{
+            position: absolute;
+            content: "";
+            top: 20%;
+            right: -4%;
+            height: 25px;
+            width: 1px;
+            background-color: rgb(219, 213, 213);
+          }
+        }
+
+        .private{
+          margin : 0 20px;
+          height: 30px;
+          border-radius: 5px;
+          background: hsla(0deg, 0%, 100%, 0.24);
+          position: relative;
+
+          &::after{
+            position: absolute;
+            content: "";
+            top:5%;
+            right: -6%;
+            height: 27px;
+            width: 2px;
+            background-color: rgb(244, 235, 235);
+          }
+
+          p{
+            color : white;
+            font-weight: 600;
+            margin : auto 10px;
+            line-height: 30px;
+          }
+        }
+
+        img{
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          margin : 0 3px
+        }
+
+        .number{
+          background: hsla(0deg, 0%, 100%, 0.24);
+          border-radius:50%;
+          height: 30px;
+          width: 30px;
+          margin-left: 3px;
+           p{
+            text-align: center;
+            color : white;
+            margin-top: 5px;
+           }
+        }
+
+        .text{
+          background: hsla(0deg, 0%, 100%, 0.24);
+          height: 30px;
+          margin : auto 10px;
+          color : white;
+          font-weight: 600;
+          padding: 5px 10px;
+          border-radius: 5px
+        }
+      }
+
+      .navbar-board-right{
+        display : flex;
+        margin-right: 10px;
+        background: hsla(0deg, 0%, 100%, 0.24);
+        height: 30px;
+        border-radius: 5px;
+        padding: 5px 10px;
+        color : white;
+        font-weight: 600;
+      }
+  }

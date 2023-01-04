@@ -1,0 +1,37 @@
+@import './_global.scss';
+@import "~bootstrap/scss/bootstrap";
+
+body{
+    margin : 0;
+    font-family: 'Source Sans Pro' , sans-serif;
+    font-size: 14px;
+    line-height: 1.3em;
+    user-select: none;
+}
+
+.trello-container{
+    height: 100vh; // co nghia full man hinh bat ke man hinh ban to bao nhieu 
+    //  display: grid;
+    //  grid-template-rows: 40px 50px 1fr; // có nghĩ là chia màn hình thành 3 dòng , dòng 1 cao 40px , dòng 2 cao 50px , dòng 3 chiếm 1 frame khung hình 
+    //  line-height: 1.3em;
+     background-color: $board-bg-color;
+ 
+     .icon{
+        font-size: 14px;
+        margin-right: 3px;
+     }
+
+}
+
+.trello-content-editable{
+    background-color: inherit;
+    border : none !important;
+    font-size: inherit;
+    cursor: pointer;
+    font-weight: inherit;
+
+    &:focus{
+        background-color: white !important;
+        border : 1px solid border
+    }
+}
